@@ -1,0 +1,26 @@
+library(shiny)
+
+shinyServer(function(input,output){
+  output$project_code <- {(
+    renderText(input$projcode) 
+  )}
+  output$project_name <- {(
+    renderText(input$projName)
+  )}
+  
+  output$tech_used <- {(
+    renderText(input$tech)
+  )}
+  
+  output$location <- {(
+    renderText(input$loc)
+  )}
+  
+  output$no_of_days_spent <- {(
+    renderText(input$ndayspent)
+  )}
+  
+  output$department <- {(
+    renderText(input$department)
+  )}
+})
